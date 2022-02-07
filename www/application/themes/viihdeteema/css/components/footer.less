@@ -1,0 +1,33 @@
+.footer {
+  background-color: @footer-bg;
+  border-top: @footer-top-border;
+  color: @footer-color;
+  padding-bottom: @footer-padding;
+  padding-top: @footer-padding;
+  @media @tablet-width {
+    text-align: center;
+  }
+
+  h2, h3, h4 {
+    color: @footer-heading-color;
+  }
+
+  p {
+    color: @footer-color;
+  }
+
+  a {
+    color: @footer-link-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @footer-link-hover-color;
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 8px;
+  border-top: 1px solid #4b636f;
+}

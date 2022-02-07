@@ -1,0 +1,56 @@
+// Painikkeet
+// yleensä määritellään väh. kahdenlaiset painikkeet: ensisijainen ja toissijainen.
+
+.btn,
+button {
+  .transition(@button-transition);
+}
+
+.btn {
+  margin: @btn-cta-margin;
+  max-width: 100%;
+  white-space: normal;
+
+  &-primary {
+    background-color: @btn-cta-primary-bg;
+    color: @btn-cta-primary-color;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    border: 0;
+    transition: all 0.5s ease;
+    font-size: @button-font-size;
+    letter-spacing: 2px;
+    span {
+      @media @tablet {
+        text-align: right;
+        color: transparent;
+        transition: all 0.5s ease;
+      }
+    }
+    //<span>&rarr;</span>
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @btn-cta-primary-bg-hover;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      transition: all 0.5s ease;
+      span {
+        color: @tumma;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: @btn-cta-secondary-bg;
+    color: @btn-cta-secondary-color;
+    padding: @btn-cta-padding;
+    border: 1px solid @oranssi;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @btn-cta-primary-bg-hover;
+    }
+  }
+}

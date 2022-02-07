@@ -1,0 +1,31 @@
+// Jos sivulle lisää automaattisen navigaation lohkovalikosta, se käyttää näitä tyylejä
+
+ul.nav {
+
+  li {
+    a {
+      color: @nav-color;
+      background-color: @tumma;
+      &:hover,
+      &:focus,
+      &:active {
+        color: @nav-link-hover-color;
+      }
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {
+      > ul {
+        display: block;
+      }
+    }
+
+    &.nav-path-selected {
+      background-color: @nav-link-hover-bg;
+      a {
+        color: @oranssi;
+      }
+    }
+  }
+}

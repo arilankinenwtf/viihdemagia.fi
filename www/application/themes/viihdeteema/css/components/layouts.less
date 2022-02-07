@@ -1,0 +1,635 @@
+// Rakenteiden/alueiden tyylit
+
+main {
+  background-color: rgb(94, 0, 0);
+}
+
+.col-sm-12 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.layout {
+  padding-top: @layout-padding;
+  padding-bottom: @layout-padding;
+
+  &-gutter {
+    padding: @gutter-lg;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    @media @tablet-width {
+      padding: @layout-padding-mobile;
+      padding-top: 4rem;
+    }
+  }
+
+  &-mobile-hide {
+    @media @tablet-width {
+      display: none;
+    }
+  }
+
+  &-mobile-reverse {
+    @media @tablet-width {
+      .row {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    } 
+  }
+
+  &-mobile-align-center {
+    @media @tablet-width {
+      text-align: center;
+    }
+  }
+
+  &-desktop-hide {
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  &-kuva-vasen {
+    margin-right: -16px;
+    border-right: 2px solid @tumma;
+    padding-right: 40px;
+    margin-bottom: 40px;
+    @media @tablet-width {
+      margin-right: 0px;
+      margin-bottom: 0px;
+      padding: 2rem;
+      padding-bottom: 0;
+    } 
+  }
+
+  &-kuva-oikea {
+    margin-left: -16px;
+    border-left: 2px solid @tumma;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    @media @tablet-width {
+      margin-left: 0px;
+      margin-bottom: 0px;
+      padding: 2rem;
+      padding-bottom: 0;
+    } 
+  }
+
+  &-teksti-oikea {
+    height: auto;
+    padding: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 40px;
+    @media @tablet-width {
+      border-right: 2px solid @tumma;
+      text-align: right;
+      padding: 2rem;
+      padding-top: 1rem;
+      h2 {
+        padding-top: 0;
+      }
+    } 
+  }
+
+  &-teksti-vasen {
+    height: auto;
+    padding: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 40px;
+    text-align: right;
+    @media @tablet-width {
+      text-align: left !important;
+      border-left: 2px solid @tumma;
+      padding: 2rem;
+      padding-top: 1rem;
+      h2 {
+        padding-top: 0;
+      }
+    } 
+  }
+
+  &-palvelu-valkoinen-laatikko {
+    position: relative;
+    height: 380px;
+    background-color: @light;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    margin-right: 8rem;
+    margin-left: 8rem;
+    border-radius: 1;
+    z-index: 999;
+    a {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media @large-desktop {
+      height: 400px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    @media @small-desktop-width {
+      height: 550px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    @media @tablet-width {
+      height: 450px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &-max-width {
+    position: relative;
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      @media @large-desktop {
+        position: relative;
+        margin-top: -400px;
+        z-index: -10;
+      }
+      @media @tablet-width {
+        position: relative;
+        margin-top: -300px;
+        z-index: -10;
+        height: 390px;
+      }
+    }
+    ::after {
+      background: @kuva-gradientti-alas;
+      content: '';
+      height: 70vh;
+      left: 0px;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      z-index: 900;
+      @media @large-desktop {
+        margin-top: -300px;
+        z-index: -10;
+        height: 600px;
+      }
+      @media @tablet-width {
+        margin-top: -300px;
+        z-index: -10;
+        height: 390px;
+      }
+    }
+  }
+
+  &-padding-bottom {
+    padding-bottom: 3rem;
+    @media @tablet-width {
+      padding-bottom: @layout-padding;
+    }
+  }
+
+  &-padding {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    @media @tablet-width {
+      padding: @layout-padding;
+    }
+  }
+
+  &-display-flex {
+    display: flex;
+	  flex-direction: column;
+  }
+
+  &-tumma-tausta {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: @tumma;
+    h1, h2, h3, h4, p {
+      color: @light;
+    }
+  }
+
+  &-etusivu-palvelut {
+    width: 250px;
+    h1, h2, h3, h4, p {
+      color: @light;
+    }
+    @media @desktop {
+      width: 220px;
+    }
+    @media @tablet-width {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  &-viiva-pallo {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: @tumma;
+  }
+
+  &-siniviiva {
+    margin-bottom: 20px;
+    outline: 1px solid @tumma;
+    outline-offset: -40px;
+  }
+
+  &-left {
+    margin: 0;
+    margin-left: 0;
+  }
+
+  &-right {
+    margin: 0;
+    margin-right: 0;
+  }
+
+  &-white-box {
+    justify-content: center;
+    background-color: @light;
+    height: 320px;
+    width: 260px;
+    border-radius: 1%;
+    margin-bottom: 2rem;
+    @media @desktop {
+      width: 220px;
+    }
+    @media @tablet-width {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      color: @tumma;
+    }
+    img {
+      margin-top: 1rem;
+    }
+  }
+
+  &-palvelut-background {
+    background-image:
+    @kuva-gradientti-sivulle,
+    url('/application/files/3016/4123/2552/EtusivuToimisto.jpeg');
+    width: 100%;
+    height: auto;
+    padding-top: 320px;
+    padding-bottom: 80px;
+    margin-bottom: 3rem;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    @media @desktop {
+      padding-top: 140px;
+    }
+    @media @tablet-width {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &-projektikuva-desktop {
+    img {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media @small-desktop-width {
+      display: none;
+    }
+  }
+  &-projektikuva-mobile {
+    img {
+      width: 70%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media @small-desktop {
+      display: none;
+    }
+  }
+
+  &-X-pallo {
+    position: relative;
+    padding-top: 2rem;
+    margin-left: auto;
+    h2 {
+      font-size: 3rem;
+      margin: auto;
+      color: @light;
+      line-height: 200px;
+      text-align: center;
+      background-color: @tumma;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      @media @small-desktop-width {
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
+      }
+    }
+    h3 {
+      position: absolute;
+      font-weight: 300;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 40px;
+      color: @light;
+      @media @small-desktop-width {
+        margin-top: 50px;
+        font-size: 1.4rem;
+      }
+    }
+    h4 {
+      padding-top: 1.5rem;
+      @media @small-desktop-width {
+        font-size: 0.8rem
+      }
+      @media @tablet-width {
+        font-size: 1rem
+      }
+    }
+  }
+
+  &-X-pallo-pieni {
+    h1, h2, h3 {
+      margin: auto;
+      color: @light;
+      line-height: 160px;
+      text-align: center;
+      background-color: @tumma;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+    }
+    margin-top: 4rem;
+    @media @large-desktop {
+      margin-top: 1.5rem;
+    }
+    @media @tablet-width {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &-naama-iso {
+    margin: auto;
+    text-align: center;
+    img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &-naama {
+    text-align: center;
+    img {
+      margin-left: -1rem;
+      margin-top: 4rem;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      @media @large-desktop {
+        margin-top: 1.5rem;
+      }
+      @media @tablet-width {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  &-yritys-background {
+    position: relative;
+    padding-bottom: 3rem;
+    img {
+      object-fit: cover;
+      height: 60vh;
+      width: 100%;
+    }
+    ::after {
+      background: @kuva-gradientti-alas;
+      content: '';
+      height: 60vh;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &-arvot {
+    padding: 4rem;
+    padding-top: 2.5rem;
+    padding-top: 0;
+    @media @small-desktop-width {
+      padding: 1rem;
+      padding-top: 0;
+    }
+  }
+
+  &-rekry {
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border: 1px solid @tumma;
+    border-radius: 1;
+    h2 {
+      color: @oranssi;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-dark {
+    .layout-style (@layout-dark-bg, @layout-dark-color);
+  }
+
+  &-large-padding {
+    padding-bottom: @layout-padding-lg;
+    padding-top: @layout-padding-lg;
+  }
+
+  &-center-vertically {
+    .row {
+      @media @tablet {
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+
+  &-footer-oranssi {
+    margin-top: 5rem;
+    padding-left: 1rem;
+    border-left: 1px solid @oranssi;
+    @media @tablet-width {
+      border: 0;
+      text-align: center;
+      padding-left: 0rem;
+      margin-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &-icon-hover {
+    img {
+      &:hover,
+      &:focus,
+      &:active {
+        filter: invert(44%) sepia(25%) saturate(7343%) hue-rotate(339deg) brightness(105%) contrast(103%);
+        transition-duration: 0ms;
+      }
+    }
+  }
+
+}
+
+.left-column-ref > div[class^=ccm-custom-style-] {
+  position: relative;
+  z-index: -1;
+  height: 624px;
+  margin-bottom: 24px;
+  background-size: cover;
+  h2 {
+    color: @light;
+    padding-left: 10%;
+    padding-top: 12rem;
+    padding-right: 20%;
+  }
+  p {
+    color: @light;
+    padding-top: 2rem;
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+  ::after {
+    z-index: -2;
+    background: @kuva-gradientti-alas;
+    content: '';
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 0;
+  }
+  @media @tablet-width {
+    text-align: center;
+    margin-bottom: 24px;
+    height: 300px;
+    text-align: center;
+    h2 {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5rem;
+    }
+    p {
+      padding-top: 2rem;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+.right-column-ref > div[class^=ccm-custom-style-] {
+  position: relative;
+  z-index: -1;
+  height: 300px;
+  margin-bottom: 24px;
+  background-size: cover;
+  h2 {
+    color: @light;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4rem;
+  }
+  p {
+    color: @light;
+    padding-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  ::after {
+    z-index: -2;
+    background: @kuva-gradientti-alas;
+    content: '';
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 0;
+  }
+  @media @tablet-width {
+    text-align: center;
+    margin-bottom: 24px;
+    height: 300px;
+    h2 {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    p {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+.col-sm-2 {
+  @media @large-desktop {
+    width: 33.333%;
+  }
+  @media @tablet-width {
+    width: 50%;
+  }
+}
+
+.fade-in {
+  &-right {
+    opacity: 0;
+    transform: translateX(100%);
+    @media @tablet-width {
+      transition: opacity 1000ms, transform 600ms ease-in;
+    }
+    transition: opacity 1400ms, transform 1000ms ease-in;
+  }
+  &-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    @media @tablet-width {
+      transition: opacity 1000ms ease-in, transform 600ms ease-in;
+    }
+    transition: opacity 1400ms ease-in, transform 1000ms ease-in;
+  }
+  &-hidas {
+    opacity: 0;
+    transform: translate(10%,-40%);
+    @media @tablet-width {
+      transition: opacity 1000ms ease-in, transform 2000ms ease-in;
+    }
+    transition: opacity 1000ms ease-in, transform 2000ms ease-in;
+  }
+}
+
+.fade-in.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+//Randomisti poukkulan ja Weldinnin layoutteja::after
+

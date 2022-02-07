@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: fi_FI\n"
+
+# ## COOKIES DISCLOSURE TRANSLATIONS ###
+msgid "Display Settings"
+msgstr "Evästebannerin asetukset"
+
+msgid "Enable Debug Mode"
+msgstr "Debug-tila päällä"
+
+msgid ""
+"When debug mode is enabled, the notification is visible although user "
+"would've already allowed cookies. This is handy when styling the debug "
+"notification box for your theme."
+msgstr ""
+"Kun debug-tila on päällä, evästebanneri tulee aina näkyviin vaikka "
+"käyttäjä olisi jo sallinut evästeet. Tämä on kätevää esimerkiksi "
+"evästebannerin tyylejä muotoillessa."
+
+msgid "Content for different languages"
+msgstr "Sisältö eri kielillä"
+
+msgid "More info page"
+msgstr "Lisätiedon sivu"
+
+msgid "More Info -button text"
+msgstr "Lue lisää -painikkeen teksti"
+
+msgid "Accept button text"
+msgstr "Hyväksy-painikkeen teksti"
+
+msgid "Decline button text"
+msgstr "Hylkää-painikkeen teksti"
+
+msgid "Enabled"
+msgstr "Käytössä"
+
+msgid "Display settings successfully saved."
+msgstr "Asetukset tallennettiin onnistuneesti."
+
+msgid "Cookies Disclosure"
+msgstr "Evästeiden hyväksyminen"
+
+msgid "Notify your users about EU Cookie Law."
+msgstr "Informoi käyttäjiä EU:n evästelaista."
