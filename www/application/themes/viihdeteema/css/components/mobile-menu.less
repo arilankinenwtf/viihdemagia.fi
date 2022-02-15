@@ -3,7 +3,6 @@
   position: absolute;
   padding-right: 30px;
   right: 0;
-
   @media @small-desktop {
     display: none;
   }
@@ -62,7 +61,7 @@
 
   &.open {
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden !important;
     z-index: 999;
     .hide-scrollbar();
 
@@ -96,9 +95,12 @@
   font-family: @mobile-menu-font;
   font-size: @mobile-menu-font-size;
   height: 100vh;
-  margin-top: @header-mobile-height - 20px;
-  overflow: scroll;
+  margin-top: (@header-mobile-height - 50px);
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: @mobile-menu-padding;
+  padding-top: 20px;
+  padding-bottom: 200px;
   .hide-scrollbar();
 
   @media @tablet {
@@ -114,16 +116,17 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    padding-top: 10px;
+    padding-top: 60px;
     justify-content: center;
+    text-align: center;
     li {
       padding-right: 15px;
       padding-left: 15px;
+      text-align: center;
       a {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         text-align: center;
         font-size: 30px;
-        line-height: 0.8;
         font-weight: 800;
       }
 
@@ -131,11 +134,12 @@
         padding-left: 15px;
         padding-right: 15px;
         li {
+          text-align: center;
           a {
             text-align: center;
-            padding-top: 0.5rem;
+            padding-top: 0rem;
             font-weight: 700;
-            font-size: 22px;
+            font-size: 20px;
           }
         }
       }
@@ -148,7 +152,8 @@
     text-decoration: none;
 
     &.nav-path-selected {
-      color: @mobile-menu-active-color;
+      color: @oranssi-tumma;
+      font-weight: 700px;
     }
 
     &.nav-path-selected,

@@ -80,7 +80,6 @@ if (count($navItems) > 0) {
     echo '<ul class="nav horizontal-nav">'; //opens the top-level menu
 
     foreach ($navItems as $ni) {
-        $chevronIcon = $ni->hasSubmenu ? '<div class="subnav-icon"></div>' : '';
         echo '<li class="' . $ni->classes . '">'; //opens a nav item
 
         $niPageId = $ni->cID;
@@ -94,9 +93,7 @@ if (count($navItems) > 0) {
             }
         }
 
-        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $niPageIconHtml . 
-            h($ni->name) . $chevronIcon . '</a>';
-
+        
         if ($ni->hasSubmenu) {
             echo '<div class="submenu-wrapper"><ul>'; //opens a dropdown sub-menu
         } else {

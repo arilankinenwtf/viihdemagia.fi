@@ -134,7 +134,6 @@ if (count($navItems) > 0) {
     echo '<ul class="nav">'; //opens the top-level menu
 
     foreach ($navItems as $ni) {
-        $chevronIcon = $ni->hasSubmenu ? '<span class="icon icon-chevron-down icon-small"></span>' : '';
         echo '<li class="' . $ni->classes . '">'; //opens a nav item
 
         $niPageId = $ni->cID;

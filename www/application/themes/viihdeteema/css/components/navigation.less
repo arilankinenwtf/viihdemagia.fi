@@ -1,9 +1,14 @@
 // Jos sivulle lisää automaattisen navigaation lohkovalikosta, se käyttää näitä tyylejä
 
 ul.nav {
-
+  @media @small-desktop-width {
+    display: none;
+  }
+   /* to vertically align */
   li {
     a {
+      font-size: 1.2rem;
+      font-weight: 500;
       color: @nav-color;
       background-color: @tumma;
       &:hover,
@@ -24,7 +29,7 @@ ul.nav {
     &.nav-path-selected {
       background-color: @nav-link-hover-bg;
       a {
-        color: @oranssi;
+        color: @oranssi-tumma;
       }
     }
   }

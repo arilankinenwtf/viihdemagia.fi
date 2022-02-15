@@ -52,6 +52,7 @@
      img {
         height: 600px;
         width: 100%;
+        object-fit: cover;
         padding: 0 !important;
         @media @desktop {
           height: 500px;
@@ -62,7 +63,7 @@
       }
       ::after {
         position: absolute;
-        background: @kuva-gradientti-alas;
+        //background: @kuva-gradientti-alas;
         content: '';
         height: 100%;
         left: 0;
@@ -73,21 +74,21 @@
 
     &-title {
       font-size: 3.5rem;
+      text-align: left;
       letter-spacing: 1px;
       position: absolute;
       color: @slider-color;
-      top: 35%;
+      bottom: 55%;
       left: 10%;
       right: 40%;
       @media @desktop {
         font-size: 2rem;
-        top: 20%;
         right: 20%;
       }
       @media @tablet-width {
         font-size: 2rem;
-        top: 20%;
         right: 10%;
+        left: 12%;
       }
     }
 
@@ -95,20 +96,18 @@
       p {
           color: @slider-color;
           font-size: 1.6rem;
+          text-align: left;
           letter-spacing: 1px;
           position: absolute;
-          top: 65%;
+          bottom: 35%;
           left: 10%;
           right: 40%;
           @media @desktop {
             font-size: 1.2rem;
-            top: 40%;
             right: 20%;
           }
           @media @tablet-width {
-            left: 1rem;
             font-size: 1.2rem;
-            top: 45%;
             right: 10%;
           }
       }
@@ -129,19 +128,20 @@
     font-size: 0;
     background-color: @tumma;
     color: @tumma;
-    height: 0.6rem;
-    width: 0.6rem;
-    padding: 0.3rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    padding: 0rem;
     margin-right: 1.2rem;
     margin-left: 1.2rem;
+    border: 1px solid @tumma;
   }
   
   .splide__pagination .splide__pagination__page.is-active {
     outline: none;
     background-color: @tumma;
     color: @tumma;
-    padding: 0.3rem;
-    border: 5px solid @tumma;
+    padding: 0.2rem;
+    border: 6px solid @tumma;
   }
 
   .wtfslider-next-arrow {
