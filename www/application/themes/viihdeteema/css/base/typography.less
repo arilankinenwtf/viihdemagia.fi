@@ -3,12 +3,12 @@ h1 {
   font-family: @h1-font;
   font-size: @h1-size-mobile;
   font-weight: @h1-weight;
-  line-height: 2rem;
+  line-height: 3.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  @media @tablet {
-    font-size: @h1-size;
-    line-height: @h1-line-height;
+  @media @small-desktop-width {
+    font-size: 2.6rem !important;
+    line-height: 3rem !important;
   }
 }
 
@@ -17,7 +17,6 @@ h2 {
   font-family: @h2-font;
   font-size: @h2-size-mobile;
   font-weight: @h2-weight;
-
   @media @tablet {
     font-size: @h2-size;
   }
@@ -29,7 +28,6 @@ h3 {
   font-weight: @h3-weight;
   font-family: @font-family-headings;
   letter-spacing: 1px;
-
   @media @tablet {
     font-size: @h3-size;
   }
@@ -74,11 +72,17 @@ a {
 }
 
 .ingress {
-  color: @ingress-color;
+  color: @tumma;
+  margin: auto;
+  max-width: 600px;
   display: block;
   font-size: @ingress-size;
   font-weight: @ingress-weight;
+  line-height: 1.4;
   padding: @ingress-margin 0;
+  @media @tablet-width {
+    font-size: 1.5rem;
+  }
 }
 
 .caption {
@@ -87,6 +91,51 @@ a {
 }
 
 blockquote {
-  color: @quote-color;
-  font-size: @quote-size;
+  color: @tumma;
+  font-size: @ingress-size;
+  font-weight: @ingress-weight;
+  line-height: 1.4;
+  margin: auto;
+  max-width: 600px;
+  padding: @ingress-margin 0;
+
+  @media @tablet-width {
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: @tumma;
+    font-size: @ingress-size;
+    font-weight: @ingress-weight;
+
+    @media @tablet-width {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+main a {
+  color: @oranssi;
+
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+  }
+}
+
+a.ccm-panel-add-block-draggable-block-type {
+  p, h4 {
+    color: black !important;
+  }
+}
+
+div.ccm-panel-content header {
+  h4 {
+    color: black;
+  }
+}
+
+.ccm-ui {
+  p, h1, h2, h3, h4 {
+    color: black;  
+  }
 }

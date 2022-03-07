@@ -1,117 +1,24 @@
 .header {
   background-color: @header-bg;
-  height: 6rem;
   display: flex;
+  height: 5rem;
   &-logo {
+    display: flex;
     justify-content: center;
     img {
       margin: @header-logo-margin;
-      margin-left: 3rem;
-      height: 3rem;
+      margin-left: 2.5rem;
+      height: 2.5rem;
     }
   }
 
   &-navigation {
-    display: none;
-    padding-left: 360px;
-    @media @large-desktop {
-      padding-left: 100px;
-    }
-    @media @desktop {
-      padding-left: 0;
-    }
-    @media @tablet {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-    }
 
-    ul {
-      padding-left: 10rem;
-      li {
-        position: relative;
-        padding-top: 1.5rem;
-        padding-right: 2rem;
-        height: 5rem;
-        .transition();
-        a {
-          color: @light;
-          font-size: 1.5rem;
-
-          &:after {
-            bottom: 0;
-            display: block;
-            content: '';
-            height: 0;
-            margin-bottom: 1rem;
-
-            .transition();
-          }
-    
-          &:hover,
-          &:focus,
-          &:active,
-          &.nav-path-selected {
-            &:after {
-              height: 90%;
-            }
-          }
-        }
-
-        .submenu-wrapper {
-          background-color: @tumma;
-          left: 0;
-          margin-top: 5rem;
-          max-height: 0;
-          width: 100%;
-          overflow: hidden;
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding: 0;
-          color: @light;
-          .transition();
-    
-          ul {
-            display: none;
-            padding-inline-start: 0;
-
-            li {
-              height: unset;
-              padding-right: 0rem;
-              a {
-                padding-top: 1rem;
-                color: @light;
-                font-size: 1.5rem;
-                border-top: 2px solid @light;
-                display: block;
-                text-align: left;
-                text-decoration: none;
-                text-transform: none;
-                width: 100%;
-                .transition();
-
-                &:after {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-    
-        &:hover,
-        &:focus,
-        &:active {
-    
-          .submenu-wrapper {
-            max-height: 100vh;
-
-            ul {
-              display: block;
-            }
-          }
-        }
-      }
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    @media @small-desktop-width {
+      display: none;
     }
   }
 }

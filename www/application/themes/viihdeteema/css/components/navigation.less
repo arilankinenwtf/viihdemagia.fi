@@ -1,16 +1,20 @@
 // Jos sivulle lisää automaattisen navigaation lohkovalikosta, se käyttää näitä tyylejä
 
 ul.nav {
-  @media @small-desktop-width {
-    display: none;
-  }
-   /* to vertically align */
+  display: flex;
+  flex-flow: row wrap;
+  padding-inline-start: 0;
+
   li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
     a {
-      font-size: 1.2rem;
-      font-weight: 500;
       color: @nav-color;
       background-color: @tumma;
+      font-size: 1.5rem;
       &:hover,
       &:focus,
       &:active {
@@ -29,7 +33,7 @@ ul.nav {
     &.nav-path-selected {
       background-color: @nav-link-hover-bg;
       a {
-        color: @oranssi-tumma;
+        color: @nav-link-hover-color;
       }
     }
   }
