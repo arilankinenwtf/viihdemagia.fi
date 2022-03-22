@@ -68,7 +68,9 @@
     </script>
 
     <script src="<?php echo $view->getThemePath()?>/js/main.js"></script>
+    <script src="<?php echo $view->getThemePath()?>/js/game.js" async></script>
     <script src="<?php echo $view->getThemePath()?>/js/lazysizes.min.js" async></script>
+    
     
 
     <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/bootstrap.min.css">

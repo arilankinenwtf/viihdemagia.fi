@@ -4,17 +4,20 @@ ul.nav {
   display: flex;
   flex-flow: row wrap;
   padding-inline-start: 0;
-
+  margin-right: 20px;
   li {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 50px;
+    padding-right: 65px;
+    @media @desktop {
+      padding-right: 10px;
+    }
     a {
       color: @nav-color;
-      background-color: @tumma;
-      font-size: 1.5rem;
+      background-color: transparent;
+      font-size: 1.4rem;
       &:hover,
       &:focus,
       &:active {

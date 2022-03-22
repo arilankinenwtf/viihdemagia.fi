@@ -2,6 +2,7 @@
   display: block;
   position: absolute;
   padding-right: 30px;
+  padding-top: 1.5rem;
   right: 0;
   @media @small-desktop {
     display: none;
@@ -88,22 +89,17 @@
       padding-left: 30px;
     }
   }
-
-  background-color: @mobile-menu-bg;
+  background-image: @mobile-menu-bg;
   color: @mobile-menu-color;
   display: none;
   font-family: @mobile-menu-font;
   font-size: @mobile-menu-font-size;
   height: 100vh;
-  margin-top: (@header-mobile-height - 50px);
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: @mobile-menu-padding;
-  padding-top: 20px;
-  padding-bottom: 200px;
   .hide-scrollbar();
 
-  @media @tablet {
+  @media @small-desktop-width {
     left: auto;
   }
 
@@ -116,7 +112,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 120px;
     justify-content: center;
     text-align: center;
     li {

@@ -1,11 +1,25 @@
 .feature-toggle {
   border-bottom: 2px solid gold;
   position: relative;
-
+  margin: 2rem;
+  margin-left: 1rem;
+  margin-right: 3rem;
   a {
     text-decoration: none;
   }
-
+  &-title {
+    position: absolute;
+    top: -2.5rem;
+    left: 1rem;
+    @media @small-desktop-width {
+      top: -2rem;
+    }
+  }
+  &-open-wrapper {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   &-icon {
     background-color: gold;
     .bg-image(@chevron-down);
@@ -15,7 +29,7 @@
     height: 3rem;
     margin-bottom: -1.5rem;
     position: absolute;
-    right: -1rem;
+    right: -2rem;
     width: 3rem;
     .transition();
 
@@ -28,9 +42,5 @@
     color: black;
     letter-spacing: 3px;
     text-transform: uppercase;
-  }
-
-  h2 {
-    margin-top: 0;
   }
 }

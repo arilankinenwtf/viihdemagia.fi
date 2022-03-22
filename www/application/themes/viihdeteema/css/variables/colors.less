@@ -4,12 +4,15 @@
 @black: #181818;
 @white: #fff;
 @alto: #DBDBDB;
-@light: #f1f1ef;
-@tumma: #001b2b;
+@light: #a6c6ff;
+@tumma: #4a8cff;
 @oranssi: #75001d;
 @oranssi-tumma: #F6003F;
+@punainen: #b20a2c;
+@tausta: linear-gradient(to right, #ffcba0, #b20a2c);
+@sininen-tausta: linear-gradient(to right, #b4cfff, #3061b8);
 @blue-text: @light;
-@dark-text: @light;
+@dark-text: @tumma;
 @kuva-gradientti-alas: linear-gradient(to bottom, rgba(9, 32, 43, 0), rgba(9, 32, 43, 0.85));
 @kuva-gradientti-sivulle: linear-gradient(to left, rgba(9, 32, 43, 0.3), rgba(9, 32, 43, 0.85));
 /*
@@ -26,9 +29,9 @@
 /*
 * Buttons
 */
-@btn-cta-primary-bg: @oranssi;
-@btn-cta-primary-bg-hover: @oranssi-tumma;
-@btn-cta-primary-color: @dark-text;
+@btn-cta-primary-bg: @tumma;
+@btn-cta-primary-bg-hover: @tumma;
+@btn-cta-primary-color: @white;
 @btn-cta-secondary-bg: @white;
 @btn-cta-secondary-color: @black;
 @btn-cta-secondary-color-hover: @black;
@@ -36,22 +39,22 @@
 /*
 * Footer
 */
-@footer-bg: @tumma;
-@footer-color: @light;
-@footer-heading-color: @light;
+@footer-bg: @sininen-tausta;
+@footer-color: @white;
+@footer-heading-color: @white;
 @footer-link-color: @white;
 @footer-link-hover-color: gold;
-@footer-top-border-color: @tumma;
+@footer-top-border-color: @sininen-tausta;
 
 /*
 * Header
 */
-@header-bg: @tumma;
+@header-bg: @tausta;
 
 /*
 * Home
 */
-@page-color: @oranssi;
+@page-color: @tausta;
 @home-hero-bg: @black;
 @home-hero-color: @white;
 
@@ -65,16 +68,16 @@
 * Mobile menu
 */
 @mobile-menu-toggle-bg: @white;
-@mobile-menu-bg: @tumma;
-@mobile-menu-color: @light;
+@mobile-menu-bg: @sininen-tausta;
+@mobile-menu-color: @white;
 @mobile-menu-hover-opacity: 0.8;
-@mobile-menu-active-color: @light;
+@mobile-menu-active-color: gold;
 
 /*
 * Navigation
 */
-@nav-color: @light;
-@nav-link-hover-bg: @tumma;
+@nav-color: @white;
+@nav-link-hover-bg: @tausta;
 @nav-link-hover-color: gold;
 
 /*
@@ -92,12 +95,12 @@
 /*
 * Typography
 */
-@p-color: @blue-text;
-@h1-color: @dark-text;
-@h2-color: @dark-text;
-@h3-color: @dark-text;
-@quote-color: @blue-text;
-@caption-color: @blue-text;
-@ingress-color: @blue-text;
-@link-color: @dark-text;
+@p-color: @white;
+@h1-color: @white;
+@h2-color: @white;
+@h3-color: @white;
+@quote-color: @white;
+@caption-color: @white;
+@ingress-color: @white;
+@link-color: @white;
 @link-hover-color: gold;
