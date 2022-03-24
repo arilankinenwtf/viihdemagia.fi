@@ -1,5 +1,5 @@
 <?php
-namespace Application\Theme\viihdeteema; // tässä pitää olla aina teeman kansion nimi viimeisenä
+namespace Application\Theme\Viihdeteema; // tässä pitää olla aina teeman kansion nimi viimeisenä
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 
 class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProviderInterface {

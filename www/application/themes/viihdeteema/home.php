@@ -50,7 +50,7 @@ $this->inc('elements/header.php'); ?>
 
 <style>
   .blink {
-  animation: blinker 2.5s linear infinite;
+  animation: blinker 4s linear infinite;
   }
   @keyframes blinker {
     50% {
