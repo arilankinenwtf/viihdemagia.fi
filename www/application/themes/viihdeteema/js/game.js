@@ -3,6 +3,10 @@ const gameoverTxt = document.querySelector(".gameover");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+
+
+
+
 const states = {
 	GAME_OVER: "gameover",
 	IDLE: "idle",

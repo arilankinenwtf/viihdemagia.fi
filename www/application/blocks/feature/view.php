@@ -1,5 +1,6 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
+
 <div class="feature-toggle">
   <a href="#feature-toggle-<?php echo $bID; ?>" class="feature-toggle-wrapper" type="button" data-toggle="collapse" data-target="#feature-toggle-paragraph-<?php echo $bID; ?>" aria-expanded="false" aria-controls="feature-toggle-paragraph-<?php echo $bID; ?>" id="feature-toggle-<?php echo $bID; ?>">
     <div class="feature-toggle-title">

@@ -31,11 +31,42 @@ $this->inc('elements/header.php'); ?>
   $a->display($c);
   ?>
 
+<script>
+  $(document).ready(function () {
+    $("#start").click(
+      function () {
+        $("#sormi").addClass("delete");
+        $("#mainosteksti").addClass("delete");
+      },
+    );
+    $("#start").hover(
+      function () {
+        $("#sormi").addClass("delete");
+        $("#mainosteksti").addClass("delete");
+      },
+    );
+  });
+</script>
 
+<style>
+  .blink {
+  animation: blinker 2.5s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+</style>
+  <div class="teksticontainer">
+    <div id="sormi" class="sormi blink">☞</div>
+    <div id="mainosteksti" class="mainosteksti blink">Kokeile tästä!</div>
+  </div>
   <div class="center">
     <input id="level-one" type="checkbox"/>
     <div class="level" l="1">
-      <div class="step start" r="0" c="0"></div>
+      <div id="start" class="step start" r="0" c="0"></div>
       <div class="step" r="0" c="1"></div>
       <div class="step" r="1" c="1"></div>
       <div class="step" r="2" c="1"></div>
@@ -217,7 +248,7 @@ $this->inc('elements/header.php'); ?>
       <div class="step start" r="4" c="4"></div>
       <div class="step" r="3" c="4"></div>
       <div class="step" r="2" c="4">
-        <label class="button" for="bridge-one"></label>
+        <label class="gamebutton" for="bridge-one"></label>
       </div>
       <div class="bridge">
         <input id="bridge-one" type="checkbox"/>
@@ -253,7 +284,7 @@ $this->inc('elements/header.php'); ?>
             </div>
             <div class="step" r="1" c="1"></div>
             <div class="step" r="1" c="0">
-              <label class="button" for="bridge-three"></label>
+              <label class="gamebutton" for="bridge-three"></label>
             </div>
           </div>
           <div class="step" r="4" c="0"></div>
@@ -262,7 +293,7 @@ $this->inc('elements/header.php'); ?>
           <div class="step" r="4" c="1"></div>
           <div class="step" r="4" c="2"></div>
           <div class="step" r="4" c="3">
-            <label class="button" for="bridge-four"></label>
+            <label class="gamebutton" for="bridge-four"></label>
           </div>
         </div>
         <div class="step" r="0" c="2"></div>
@@ -279,7 +310,7 @@ $this->inc('elements/header.php'); ?>
             <div class="step" r="4" c="2"></div>
           </div>
           <div class="step" r="3" c="1"></div>
-          <div class="step" r="4" c="1"></div>
+          <div class="step" r="4" c="1button"></div>
           <div class="step" r="4" c="0"></div>
           <div class="bridge">
             <input id="bridge-three" type="checkbox"/>
@@ -287,7 +318,7 @@ $this->inc('elements/header.php'); ?>
             <div class="step" r="2" c="0"></div>
             <div class="step" r="1" c="0"></div>
             <div class="step" r="0" c="0">
-              <label class="button" for="bridge-two"> </label>
+              <label class="gamebutton" for="bridge-two"> </label>
             </div>
           </div>
         </div>
@@ -298,12 +329,12 @@ $this->inc('elements/header.php'); ?>
     </div>
     <input id="finsh" type="checkbox"/>
     <div class="level">
-      <div class="message">
-        <h1>YOU WIN!</h1>
-        <p>Thanks for playing! I'm pretty impressed you had the patience to make it all the way!</p><a class="share" href="https://twitter.com/intent/tweet?text=I%20made%20it%20to%20the%20end%20of%20this%20pure%20CSS%20game%2C%20I%20bet%20you%20can%27t! &amp;url=http%3A%2F%2Fcodepen.io%2Fnathantaylor%2Fpen%2FKaLvXw&amp;via=nathantokyo" target="_blank">Brag on Twitter!</a>
+      <div class="voitto">
+        <h1>VIIHDEMAGIA</h1>
+        <p>Onnittelut pelin läpäisemisestä</p>
       </div>
     </div>
-  </div><a class="sig" href="http://nathan.tokyo" target="_blank">NATHAN.TOKYO</a>
+  </div>
 
 
 
