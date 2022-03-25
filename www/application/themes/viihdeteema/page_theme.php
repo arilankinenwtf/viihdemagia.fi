@@ -5,12 +5,9 @@ use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProviderInterface {
 
 	public function registerAssets() {
-        $this->providesAsset('css', 'bootstrap/collapse');
-        $this->requireAsset('javascript', 'bootstrap/collapse');
-        $this->requireAsset('javascript', 'bootstrap/transition');
+        $this->requireAsset('javascript', 'bootstrap');
         //$this->requireAsset('css', 'font-awesome');
         $this->requireAsset('javascript', 'jquery');
-        $this->requireAsset('javascript', 'picturefill');
 	}
 
     protected $pThemeGridFrameworkHandle = 'bootstrap3';

@@ -50,7 +50,7 @@ $this->inc('elements/header.php'); ?>
 
 <style>
   .blink {
-  animation: blinker 4s linear infinite;
+  animation: blinker 3s linear infinite;
   }
   @keyframes blinker {
     50% {
@@ -330,8 +330,8 @@ $this->inc('elements/header.php'); ?>
     <input id="finsh" type="checkbox"/>
     <div class="level">
       <div class="voitto">
+        <p>Onnittelut pelin läpäisemisestä!</p>
         <h1>VIIHDEMAGIA</h1>
-        <p>Onnittelut pelin läpäisemisestä</p>
       </div>
     </div>
   </div>
