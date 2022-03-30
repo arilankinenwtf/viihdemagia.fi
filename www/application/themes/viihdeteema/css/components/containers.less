@@ -11,14 +11,14 @@
 .kuva-oikea {
   margin-top: 5rem;
   .kuva-right {
-    @media @small-desktop-width {
+    @media @tablet-width {
       order: 1;
     }
   }
 }
 
 .feature-vasen {
-  @media @small-desktop-width {
+  @media @tablet-width {
     order: 2;
   }
   .feature-toggle {
@@ -29,12 +29,10 @@
     margin-right: 1rem;
     &-title {
       position: absolute;
-      top: -2.5rem;
+      top: -3.5rem;
       right: 1rem;
+      margin-right: 1rem;
       text-align: right;
-      @media @small-desktop-width {
-        top: -2rem;
-      }
     }
     &-open-wrapper {
       margin-right: 1rem;

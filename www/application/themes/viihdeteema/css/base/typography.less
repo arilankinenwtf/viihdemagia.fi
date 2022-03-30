@@ -15,14 +15,18 @@ h1 {
 h2 {
   color: @h2-color;
   font-family: @h2-font;
-  font-size: @h2-size-mobile;
+  font-size: @h2-size;
   font-weight: @h2-weight;
-  @media @tablet {
-    font-size: @h2-size;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media @small-desktop-width {
+    font-size: 1.6rem;
   }
 }
 
 h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: @h3-color;
   font-size: @h3-size-mobile;
   font-weight: @h3-weight;

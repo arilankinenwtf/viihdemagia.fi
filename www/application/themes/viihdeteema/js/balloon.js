@@ -8,7 +8,7 @@ function random(num) {
     var b = random(255);
     var mt = random(200);
     var ml = random(50);
-    var dur = Math.random() * (1) + 3;
+    var dur = Math.random() * (2) + 3;
     return `
     background-color: rgb(${r},${g},${b});
     color: rgba(${r},${g},${b},0.7); 
