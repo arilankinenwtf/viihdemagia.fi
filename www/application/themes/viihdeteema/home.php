@@ -31,7 +31,10 @@ $this->inc('elements/header.php'); ?>
   $a->display($c);
   ?>
 
-<script>
+  <div class="balloon-container" id="balloon-container"></div>
+
+  <script>
+
   $(document).ready(function () {
     $("#start").click(
       function () {

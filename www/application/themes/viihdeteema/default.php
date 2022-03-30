@@ -23,14 +23,6 @@ $this->inc('elements/header.php'); ?>
     </div>
   </div>
 
-  <!-- <div class="peli">
-    <div class="score">Score: 0</div>
-      <div class="gameover hide">
-        <p class="title">Game Over</p>
-        <p class="instructions">Click to restart!</p>
-      </div>
-      <canvas id="canvas" width="800" height="600"> </canvas>
-  </div> -->
 
 
   <?php
@@ -38,6 +30,8 @@ $this->inc('elements/header.php'); ?>
   $a->enableGridContainer();
   $a->display($c);
   ?>
+
+  <div class="balloon-container" id="balloon-container"></div>
     
 </main>
 

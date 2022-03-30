@@ -69,6 +69,7 @@
 
     <script src="<?php echo $view->getThemePath()?>/js/main.js"></script>
     <script src="<?php echo $view->getThemePath()?>/js/game.js" async></script>
+    <script src="<?php echo $view->getThemePath()?>/js/balloon.js" async></script>
     <script src="<?php echo $view->getThemePath()?>/js/lazysizes.min.js" async></script>
     
     
