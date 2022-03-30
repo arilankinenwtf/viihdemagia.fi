@@ -245,85 +245,159 @@ $this->inc('elements/header.php'); ?>
     </div>
     <input id="level-five" type="checkbox"/>
     <div class="level">
-      <div class="step start" r="4" c="4"></div>
-      <div class="step" r="3" c="4"></div>
-      <div class="step" r="2" c="4">
-        <label class="gamebutton" for="bridge-one"></label>
-      </div>
-      <div class="bridge">
-        <input id="bridge-one" type="checkbox"/>
-        <div class="step" r="1" c="4"></div>
-        <div class="step" r="0" c="4"></div>
-        <div class="step" r="0" c="3"></div>
+      <div class="step start" r="0" c="0"></div>
+      <div class="path">
+        <div class="step" r="0" c="1"></div>
+        <div class="step" r="0" c="2"></div>
         <div class="path">
+          <div class="step" r="1" c="2"></div>
+          <div class="step" r="2" c="2"></div>
+          <div class="step" r="3" c="2"></div>
+          <div class="path">
+            <div class="step" r="2" c="2"></div>
+            <div class="step" r="2" c="3"></div>
+            <div class="step" r="1" c="3"></div>
+            <div class="step" r="1" c="4"></div>
+            <div class="step" r="2" c="4"></div>
+          </div>
+          <div class="step" r="3" c="1"></div>
+          <div class="step" r="3" c="0"></div>
+          <div class="step" r="2" c="0"></div>
+          <div class="step" r="2" c="1"></div>
+          <div class="step" r="2" c="2"></div>
+          <div class="step" r="1" c="2"></div>
           <div class="step" r="1" c="3"></div>
+          <div class="step" r="0" c="3"></div>
+          <div class="step" r="0" c="4"></div>
           <div class="step" r="1" c="4"></div>
           <div class="step" r="2" c="4"></div>
-          <div class="step" r="3" c="4"></div>
-          <div class="step" r="3" c="3"></div>
-          <div class="step" r="4" c="3"></div>
-          <div class="step" r="4" c="2"></div>
-          <div class="step" r="4" c="1"></div>
-          <div class="path">
-            <div class="step" r="3" c="1"></div>
-            <div class="step" r="3" c="0"></div>
-            <div class="step" r="2" c="0"></div>
-            <div class="step" r="1" c="0"></div>
-            <div class="step" r="0" c="0"></div>
-            <div class="step" r="0" c="1"></div>
-            <div class="path">
-              <div class="step" r="0" c="2"></div>
-              <div class="bridge">
-                <input id="bridge-two" type="checkbox"/>
-                <div class="step" r="0" c="3"></div>
-                <div class="step" r="0" c="4"></div>
-                <div class="step" r="1" c="4"></div>
-                <div class="step" r="2" c="4"></div>
-                <div class="step" r="2" c="3"></div>
-              </div>
-            </div>
-            <div class="step" r="1" c="1"></div>
-            <div class="step" r="1" c="0">
-              <label class="gamebutton" for="bridge-three"></label>
-            </div>
-          </div>
-          <div class="step" r="4" c="0"></div>
-          <div class="step" r="3" c="0"></div>
-          <div class="step" r="3" c="1"></div>
-          <div class="step" r="4" c="1"></div>
-          <div class="step" r="4" c="2"></div>
-          <div class="step" r="4" c="3">
-            <label class="gamebutton" for="bridge-four"></label>
-          </div>
         </div>
-        <div class="step" r="0" c="2"></div>
-        <div class="step" r="0" c="1"></div>
-        <div class="step" r="1" c="1"></div>
-        <div class="step" r="1" c="0"></div>
-        <div class="bridge">
-          <input id="bridge-four" type="checkbox"/>
+        <div class="step" r="0" c="3"></div>
+        <div class="step" r="0" c="4"></div>
+        <div class="step" r="1" c="4"></div>
+        <div class="path">
+          <div class="step" r="1" c="3"></div>
+          <div class="step" r="2" c="3"></div>
+          <div class="step" r="2" c="2"></div>
+          <div class="step" r="2" c="1"></div>
           <div class="step" r="2" c="0"></div>
-          <div class="step" r="3" c="0"></div>
-          <div class="path">
-            <div class="step" r="4" c="0"></div>
-            <div class="step" r="4" c="1"></div>
-            <div class="step" r="4" c="2"></div>
-          </div>
-          <div class="step" r="3" c="1"></div>
-          <div class="step" r="4" c="1button"></div>
-          <div class="step" r="4" c="0"></div>
-          <div class="bridge">
-            <input id="bridge-three" type="checkbox"/>
-            <div class="step" r="3" c="0"></div>
-            <div class="step" r="2" c="0"></div>
-            <div class="step" r="1" c="0"></div>
-            <div class="step" r="0" c="0">
-              <label class="gamebutton" for="bridge-two"> </label>
-            </div>
-          </div>
+          <div class="step" r="1" c="0"> </div>
         </div>
+        <div class="step" r="2" c="4"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="3" c="2"></div>
+        <div class="step" r="3" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="3" c="2"></div>
+        <div class="step" r="3" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="3" c="2"></div>
+        <div class="step" r="3" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="2" c="1"></div>
+        <div class="step" r="2" c="0"></div>
+        <div class="step" r="3" c="0"></div>
+        <div class="step" r="4" c="0"></div>
+        <div class="step" r="4" c="1"></div>
+        <div class="step" r="4" c="2"></div>
+        <div class="step" r="3" c="2"></div>
       </div>
-      <div class="step finish" r="2" c="2">
+      <div class="step" r="1" c="0"></div>
+      <div class="path">
+        <div class="step" r="1" c="1"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+        <div class="step" r="1" c="3"></div>
+        <div class="step" r="2" c="3"></div>
+        <div class="step" r="2" c="2"></div>
+        <div class="step" r="1" c="2"></div>
+      </div>
+      <div class="step" r="2" c="0"></div>
+      <div class="step" r="3" c="0"></div>
+      <div class="step" r="4" c="0"></div>
+      <div class="step" r="4" c="1"></div>
+      <div class="step" r="4" c="2"></div>
+      <div class="step" r="3" c="2"></div>
+      <div class="step" r="2" c="2"></div>
+      <div class="path">
+        <div class="step" r="2" c="1"></div>
+        <div class="step" r="2" c="0"></div>
+        <div class="step" r="3" c="0"></div>
+        <div class="step" r="4" c="0"></div>
+        <div class="step" r="4" c="1"></div>
+        <div class="step" r="4" c="2"></div>
+      </div>
+      <div class="step" r="1" c="2"></div>
+      <div class="step" r="0" c="2"></div>
+      <div class="step" r="0" c="3"></div>
+      <div class="step" r="1" c="3"></div>
+      <div class="step" r="1" c="4"></div>
+      <div class="step" r="0" c="4"></div>
+      <div class="step" r="0" c="3"></div>
+      <div class="step" r="1" c="3"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="2"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="4"></div>
+      <div class="step" r="1" c="4"></div>
+      <div class="step" r="0" c="4"></div>
+      <div class="step" r="0" c="3"></div>
+      <div class="step" r="0" c="2"></div>
+      <div class="step" r="0" c="1"></div>
+      <div class="step" r="0" c="2"></div>
+      <div class="step" r="0" c="3"></div>
+      <div class="step" r="0" c="4"></div>
+      <div class="step" r="1" c="4"></div>
+      <div class="step" r="2" c="4"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="2"></div>
+      <div class="step" r="2" c="1"></div>
+      <div class="step" r="2" c="0"></div>
+      <div class="step" r="2" c="1"></div>
+      <div class="step" r="2" c="2"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="4"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="2"></div>
+      <div class="step" r="2" c="1"></div>
+      <div class="step" r="2" c="0"></div>
+      <div class="step" r="3" c="0"></div>
+      <div class="step" r="3" c="1"></div>
+      <div class="step" r="3" c="2"></div>
+      <div class="step" r="3" c="1"></div>
+      <div class="step" r="3" c="0"></div>
+      <div class="step" r="4" c="0"></div>
+      <div class="step" r="4" c="1"></div>
+      <div class="step" r="4" c="2"></div>
+      <div class="step" r="3" c="2"></div>
+      <div class="step" r="3" c="3"></div>
+      <div class="step" r="2" c="3"></div>
+      <div class="step" r="2" c="4"></div>
+      <div class="step" r="3" c="4"></div>
+      <div class="step finish" r="4" c="4">
         <label class="goal" for="level-five"></label>
       </div>
     </div>
