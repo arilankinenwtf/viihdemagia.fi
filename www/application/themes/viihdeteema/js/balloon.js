@@ -1,18 +1,18 @@
 function random(num) {
     return Math.floor(Math.random()*num)
-  }
+}
   
+  var colors = ["red","gold"];
+
   function getRandomStyles() {
-    var r = random(255);
-    var g = random(255);
-    var b = random(255);
+    var r = colors[Math.floor(Math.random() * colors.length)];
     var mt = random(200);
-    var ml = random(50);
-    var dur = Math.random() * (2) + 3;
+    var ml = random(500);
+    var dur = Math.random() * (4) + 6;
     return `
-    background-color: rgb(${r},${g},${b});
-    color: rgba(${r},${g},${b},0.7); 
-    box-shadow: inset -7px -3px 10px rgba(${r-10},${g-10},${b-10},0.7);
+    background-color: ${r};
+    color: ${r}; 
+    box-shadow: inset -7px -3px 10px ${r};
     margin: ${mt}px 0 0 ${ml}px;
     animation: float ${dur}s ease-in 1;
     animation-fill-mode:forwards
@@ -27,7 +27,19 @@ function random(num) {
     balloon.style.cssText = getRandomStyles();           balloonContainer.append(balloon);
     }
   }
-  
-  window.onload = function() {
-    createBalloons(30);
+
+
+
+//Verhot
+
+window.onload = function() {
+  if (window.location.pathname == '/' ) {
+    document.getElementsByClassName("curtainContainer")[0].style.transform =
+    "translatex(-150vw) ";
+    document.getElementsByClassName("curtainContainer")[1].style.transform =
+    "translatex(150vw)";
+  } else {
+    createBalloons(7);
   }
+
+}
