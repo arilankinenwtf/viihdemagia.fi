@@ -31,38 +31,37 @@ $this->inc('elements/header.php'); ?>
   $a->display($c);
   ?>
 
-  <div class=content>
-  </div>
-  <div class="curtainBody">
-    <div id="leftCurtain" class="curtainContainer">
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
+    <div class=content></div>
+    <div class="curtainBody">
+      <div id="leftCurtain" class="curtainContainer">
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+      </div>
+      <div id="rightCurtain" class="curtainContainer">
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+        <div class="unCurtain"></div>
+      </div>
     </div>
-    <div id="rightCurtain" class="curtainContainer">
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-      <div class="unCurtain"></div>
-    </div>
-  </div>
 
   <script>
 
@@ -443,8 +442,6 @@ $this->inc('elements/header.php'); ?>
       </div>
     </div>
   </div>
-
-
 
 </main>
 
