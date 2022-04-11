@@ -13,6 +13,8 @@ button {
 
   &-primary {
     background-color: @btn-cta-primary-bg;
+    color: black;
+    font-weight: 800;
     padding: 0.9rem 2rem 0.9rem 2rem;
     border: 0;
     transition: all 0.5s ease;
@@ -31,7 +33,8 @@ button {
     &:hover,
     &:active,
     &:focus {
-      background-color: @btn-cta-primary-bg-hover;
+      background-color: @punainen;
+      color: white;
       padding-right: 3rem;
       padding-left: 3rem;
       transition: all 0.5s ease;
@@ -44,14 +47,35 @@ button {
 
   &-secondary {
     background-color: @btn-cta-secondary-bg;
-    color: @btn-cta-secondary-color;
-    padding: @btn-cta-padding;
-    border: 1px solid @oranssi;
-
+    color: white;
+    font-weight: 800;
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    border: 0;
+    transition: all 0.5s ease;
+    font-size: @button-font-size;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    span {
+      @media @tablet {
+        text-align: right;
+        color: transparent;
+        transition: all 0.5s ease;
+      }
+    }
+    //<span>&rarr;</span>
     &:hover,
     &:active,
     &:focus {
-      background-color: @btn-cta-primary-bg-hover;
+      background-color: gold;
+      color: black;
+      padding-right: 3rem;
+      padding-left: 3rem;
+      transition: all 0.5s ease;
+      span {
+        color: @tumma;
+        transition: all 0.5s ease;
+      }
     }
   }
 }
