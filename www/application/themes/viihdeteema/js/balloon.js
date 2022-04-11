@@ -33,12 +33,12 @@ function random(num) {
 //Verhot
 
 window.onload = function() {
-  if (window.location.pathname == '/' ) {
+  try {
     document.getElementsByClassName("curtainContainer")[0].style.transform =
     "translatex(-150vw) ";
     document.getElementsByClassName("curtainContainer")[1].style.transform =
     "translatex(150vw)";
-  } else {
+  } finally {
     createBalloons(7);
   }
 
