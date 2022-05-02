@@ -13,15 +13,15 @@ button {
 
   &-primary {
     background-color: @btn-cta-primary-bg;
-    color: black;
-    font-weight: 800;
-    padding: 0.9rem 2rem 0.9rem 2rem;
+    color: @btn-cta-primary-color;
+    padding: 0.8rem 2rem 0.8rem 2rem;
     border: 0;
     transition: all 0.5s ease;
-    font-size: @button-font-size;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
     span {
       @media @tablet {
         text-align: right;
@@ -29,53 +29,44 @@ button {
         transition: all 0.5s ease;
       }
     }
+    &:after {
+      content: "\2192";
+      opacity: 0;
+      font-size: 0;
+      transition: all 0.5s ease;
+    }
     //<span>&rarr;</span>
     &:hover,
     &:active,
     &:focus {
-      background-color: @punainen;
-      color: white;
-      padding-right: 3rem;
-      padding-left: 3rem;
+      background-color: @btn-cta-primary-bg-hover;
+      padding-left: 2rem;
       transition: all 0.5s ease;
       span {
-        color: @tumma;
         transition: all 0.5s ease;
+      }
+      a {
+        color: gold;
+      }
+      &:after {
+        opacity: 1;
+        padding-left: 2rem;
+        font-size: @button-font-size;
+        color: gold;
       }
     }
   }
 
   &-secondary {
     background-color: @btn-cta-secondary-bg;
-    color: white;
-    font-weight: 800;
-    padding: 0.9rem 2rem 0.9rem 2rem;
-    border: 0;
-    transition: all 0.5s ease;
-    font-size: @button-font-size;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    span {
-      @media @tablet {
-        text-align: right;
-        color: transparent;
-        transition: all 0.5s ease;
-      }
-    }
-    //<span>&rarr;</span>
+    color: @btn-cta-secondary-color;
+    padding: @btn-cta-padding;
+    border: 1px solid @oranssi;
+
     &:hover,
     &:active,
     &:focus {
-      background-color: gold;
-      color: black;
-      padding-right: 3rem;
-      padding-left: 3rem;
-      transition: all 0.5s ease;
-      span {
-        color: @tumma;
-        transition: all 0.5s ease;
-      }
+      background-color: @btn-cta-primary-bg-hover;
     }
   }
 }
