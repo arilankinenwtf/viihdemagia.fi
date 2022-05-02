@@ -14,15 +14,24 @@
 @height4: 75%; // Appears 2 times
 @height6: 52%; // Appears 2 times
 
-&.page-template-home {
+@media @small-desktop-width {
+	.teksticontainer {
+		display: none;
+	}
+	.center {
+		display: none;
+	}
+}
 
+
+@media @small-desktop {
 	.delete {
-		display: none !important;
+		opacity: 0;
 	}
 
 	.teksticontainer {
-		position: absolute;
-		top: 1380px;
+		position: relative;
+		top: 80px;
 		left: 45%;
 		display: flex;
 	}
@@ -315,8 +324,8 @@
 	.center {
 		height: 250px;
 		left: 50%;
-		position: absolute;
-		top: 1420px;
+		position: relative;
+		top:0px;
 		transform: perspective(500px) translate3d(-50%, -50%, 0) rotateZ(-45deg);
 		width: 250px;
 	}
@@ -353,5 +362,5 @@
 		right: 80px;
 		text-decoration: none;
 	}
-
+	
 }
