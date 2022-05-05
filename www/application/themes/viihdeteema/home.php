@@ -4,6 +4,7 @@ $this->inc('elements/header.php'); ?>
 
 <!-- Etusivulle on hyvä olla oma pohja -->
 
+
 <main class="main-content home-page" id="main-content">
 
 
@@ -30,6 +31,11 @@ $this->inc('elements/header.php'); ?>
   $a->enableGridContainer();
   $a->display($c);
   ?>
+
+    <div class="entrytext" id="entrytext">
+      Saammeko esittäytyä!
+    </div>
+    <img class="entryimg" id="entryimg" src="/application/files/9816/3509/1080/Transparent_logo.png">
 
     <div class=content></div>
     <div class="curtainBody">
