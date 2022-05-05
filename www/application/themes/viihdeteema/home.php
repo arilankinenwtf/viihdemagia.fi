@@ -35,7 +35,7 @@ $this->inc('elements/header.php'); ?>
     <div class="entrytext" id="entrytext">
       Saammeko esittäytyä!
     </div>
-    <img class="entryimg" id="entryimg" src="application/files/9816/3509/1080/Transparent_logo.png">
+    <img class="entryimg" id="entryimg" src="\application\themes\viihdeteema\css\icons\logo\Transparent_logo.png">
 
     <div class=content></div>
     <div class="curtainBody">
