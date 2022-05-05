@@ -2,7 +2,7 @@ function random(num) {
     return Math.floor(Math.random()*num)
 }
   
-  var colors = ["red","gold"];
+  var colors = ["red","goldenrod"];
 
   function getRandomStyles() {
     var r = colors[Math.floor(Math.random() * colors.length)];
