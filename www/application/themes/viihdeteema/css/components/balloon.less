@@ -84,7 +84,7 @@
 	margin: auto;
 	overflow: hidden;
 	position: fixed;
-	top: 0;
+	top: -20px;
 	transform-style: preserve-3d;
 	transition: transform 10s ease;
 	width: @width1;
@@ -174,4 +174,31 @@
 @keyframes swing {
 		50% { transform: rotate(-3deg);
 	}
+}
+
+.entrytext {
+	z-index: 999;
+	opacity: 1;
+	transition: 3s opacity;
+	position: absolute;
+	color: white;
+	font-size: 4rem;
+	font-weight: 800;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.entryimg {
+	z-index: 999;
+	opacity: 1;
+	transition: 3s opacity;
+	position: absolute;
+	color: white;
+	font-size: 4rem;
+	font-weight: 800;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50vw;
 }

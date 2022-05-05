@@ -33,13 +33,22 @@ function random(num) {
 //Verhot
 
 window.onload = function() {
+  window.setTimeout(fadeout, 2000); //8 seconds
   try {
-    document.getElementsByClassName("curtainContainer")[0].style.transform =
-    "translatex(-150vw) ";
-    document.getElementsByClassName("curtainContainer")[1].style.transform =
-    "translatex(150vw)";
+  window.setTimeout(verhot, 3000); //8 seconds
   } finally {
     createBalloons(7);
   }
+}
 
+function verhot() {
+  document.getElementsByClassName("curtainContainer")[0].style.transform =
+  "translatex(-150vw) ";
+  document.getElementsByClassName("curtainContainer")[1].style.transform =
+  "translatex(150vw)";
+}
+
+function fadeout() {
+  document.getElementById('entrytext').style.opacity = '0';
+  document.getElementById('entryimg').style.opacity = '0';
 }
