@@ -27,8 +27,18 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
         array('title' => t('Ingressi'), 'menuClass' => '', 'spanClass' => 'ingress'),
         array('title' => t('Kuvateksti'), 'menuClass' => '', 'spanClass' => 'caption'),
         array('title' => t('Punainen teksti'), 'menuClass' => '', 'spanClass' => 'punainen-teksti'),
-        array('title' => t('Painike (ensisijainen)'), 'menuClass' => '', 'spanClass' => 'btn btn-primary'),
-        array('title' => t('Painike (toissijainen)'), 'menuClass' => '', 'spanClass' => 'btn btn-secondary'),
+        array(
+            'title' => t('Painike'),
+            'element' => array('a'),
+            'menuClass' => 'btn btn-primary',
+            'attributes' => array('class' => 'btn btn-primary')
+        ),
+        array(
+            'title' => t('Toissijainen painike'),
+            'element' => array('a'),
+            'menuClass' => 'btn btn-primary',
+            'attributes' => array('class' => 'btn btn-secondary')
+        ),
       );
     }
 

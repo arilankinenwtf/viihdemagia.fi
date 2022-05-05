@@ -21,7 +21,17 @@ defined('C5_EXECUTE') or die("Access Denied.");
       </div>
     </div>
   </div>
+  <div class="row">
+      <div class="col-md-12 footer-third">
+        <?php
+        // new GlobalArea('nimi') luo yleisen alueen (jos sen nimistä ei vielä ole)
+        $a = new Area('Footer Third');
+        $a->display();
+        ?>
+      </div>
+  </div>
   <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 </div>
+
 
 <?php $this->inc('elements/footer_bottom.php');?>
