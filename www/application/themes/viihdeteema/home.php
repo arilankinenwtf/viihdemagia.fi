@@ -35,11 +35,8 @@ $this->inc('elements/header.php'); ?>
     <div class="entrytext" id="entrytext">
       Saammeko esittäytyä!
     </div>
-<<<<<<< HEAD
     <img class="entryimg" id="entryimg" src="\application\themes\viihdeteema\css\icons\logo\Transparent_logo.png">
-=======
-    <img class="entryimg" id="entryimg" src="/viihdemagia/application/themes/viihdeteema/css/icons/logo/Transparent_logo.png">
->>>>>>> staging
+
 
     <div class=content></div>
     <div class="curtainBody">
