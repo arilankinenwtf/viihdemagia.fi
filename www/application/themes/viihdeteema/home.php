@@ -32,9 +32,9 @@ $this->inc('elements/header.php'); ?>
   $a->display($c);
   ?>
 
-    <div class="entrytext" id="entrytext">
+    <h1 class="entrytext" id="entrytext">
       Saammeko esittäytyä!
-    </div>
+    </h1>
     <img class="entryimg" id="entryimg" src="\viihdemagia\application\themes\viihdeteema\css\icons\logo\Transparent_logo.png">
 
 
