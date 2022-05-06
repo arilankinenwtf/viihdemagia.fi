@@ -28,6 +28,16 @@ main {
     }
   }
 
+  &-gutter-xl {
+    padding: @gutter-lg;
+    padding-left: 18rem;
+    padding-right: 18rem;
+    @media @tablet-width {
+      padding: @layout-padding-mobile;
+      padding-top: 4rem;
+    }
+  }
+
   &-mobile-hide {
     @media @tablet-width {
       display: none;
