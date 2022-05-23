@@ -95,7 +95,7 @@ main {
       font-weight: 600;
     }
     @media @tablet-width {
-      height: 1100px;
+      height: 1000px;
       p {
         margin-top: 0;
       }
@@ -147,6 +147,18 @@ main {
       margin-left: 50%;
       border-radius: 50%;
       transform: translateX(-50%);
+    }
+  }
+
+  &-mobile-reverse {
+    .container {
+      .row {
+        .col-sm-12 {
+          .row {
+              flex-direction: column-reverse !important; 
+          }
+        }
+      }
     }
   }
 
