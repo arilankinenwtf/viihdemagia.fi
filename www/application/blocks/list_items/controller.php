@@ -21,7 +21,7 @@ class Controller extends BlockController implements FileTrackableInterface
 
     protected $btTable = "btList";
     protected $btExportTables = array('btList', 'btListItems');
-    protected $btInterfaceWidth = 500;
+    protected $btInterfaceWidth = 750;
     protected $btInterfaceHeight = 550;
     protected $btDefaultSet = 'basic';
 
