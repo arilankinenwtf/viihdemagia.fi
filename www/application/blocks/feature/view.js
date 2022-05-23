@@ -56,7 +56,7 @@ $(document).ready(function () {
       }
     });
   
-    $('.feature-toggle-icon').on('click', function (e) {
+    $('.feature-toggle').on('click', function (e) {
       if($(this).hasClass('active')) {
         $(this).removeClass('active');
         $(this).parent().find('.feature-toggle-open').collapse('toggle');
