@@ -24,7 +24,10 @@ main {
     padding-right: 10rem;
     @media @tablet-width {
       padding: @layout-padding-mobile;
-      padding-top: 4rem;
+      margin-top: 0;
+      padding-top: 1rem;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
   }
 
@@ -34,7 +37,10 @@ main {
     padding-right: 25vw;
     @media @tablet-width {
       padding: @layout-padding-mobile;
-      padding-top: 4rem;
+      padding-top: 1rem;
+      margin-top: 0;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
   }
 
@@ -104,11 +110,23 @@ main {
 
     h2, h3 {
       padding-top: 140px;
+      @media @tablet {
+        padding-top: 40px;
+      }
     }
     p {
-      margin-top: 50px;
       font-size: 1.3rem;
       font-weight: 600;
+      @media @tablet {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-home-bottom {
+    position: relative;
+    p {
+      margin-top: 350px;
     }
   }
 
@@ -116,6 +134,24 @@ main {
     padding-top: 2rem;
     margin-top: 1rem;
     border-top: 3px solid @gold;
+  }
+
+  &-person {
+    padding: 6rem;
+    img {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      margin-left: 50%;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+    @media @tablet {
+      padding: 2rem;
+    }
+    h1, h2, h3, h4, p {
+      padding: 1rem;
+    }
   }
 
 }
