@@ -17,13 +17,6 @@ $this->inc('elements/header.php'); ?>
   }
   ?>
   <div class="header-image" style="background-image: url('<?php echo $main_image; ?>');">
-    <div class="header-title">
-      <?php
-      $a = new Area('Page Header Title');
-      $a->setAreaGridMaximumColumns(12);
-      $a->display($c);
-      ?>
-    </div>
   </div>
 
   <?php

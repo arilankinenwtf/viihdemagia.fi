@@ -12,6 +12,12 @@
     object-fit: cover;
     margin-bottom: 3rem;
   }
+  @media @tablet-width {
+    margin-top: 0rem;
+    img {
+      height: 270px;
+    }
+  }
 }
 
 .kuva-oikea {
@@ -22,9 +28,13 @@
     object-fit: cover;
     margin-bottom: 3rem;
   }
-  .kuva-right {
-    @media @tablet-width {
+  @media @tablet-width {
+    margin-top: 0rem;
+    .kuva-right {
       order: 1;
+      img {
+        height: 270px;
+      }
     }
   }
 }
