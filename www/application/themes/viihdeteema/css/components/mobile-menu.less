@@ -4,7 +4,7 @@
   padding-right: 30px;
   padding-top: 1.5rem;
   right: 0;
-  @media @small-desktop {
+  @media @desktop-width {
     display: none;
   }
 
@@ -58,7 +58,7 @@
   top: 0;
   height: 0;
 
-  @media @small-desktop-width {
+  @media @desktop {
     position: static;
   }
 
@@ -69,12 +69,12 @@
     z-index: 999;
     .hide-scrollbar();
 
-    @media @small-desktop-width {
+    @media @desktop {
       position: absolute;
     }
     
     .menu-toggle {
-      @media @small-desktop-width {
+      @media @desktop {
         display: block;
       }
     }
@@ -102,7 +102,7 @@
   overflow-x: hidden;
   .hide-scrollbar();
 
-  @media @small-desktop-width {
+  @media @desktop {
     left: auto;
   }
 

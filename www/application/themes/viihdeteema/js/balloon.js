@@ -8,7 +8,7 @@ function random(num) {
     var r = colors[Math.floor(Math.random() * colors.length)];
     var mt = random(200);
     var ml = random(500);
-    var dur = Math.random() * (3) + 6;
+    var dur = Math.random() * (4) + 6;
     return `
     background-color: ${r};
     color: ${r}; 
@@ -37,7 +37,7 @@ window.onload = function() {
   try {
   window.setTimeout(verhot, 3000); //8 seconds
   } finally {
-    createBalloons(Math.random() * (3));
+    createBalloons(7);
   }
 }
 
