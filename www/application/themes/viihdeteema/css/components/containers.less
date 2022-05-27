@@ -13,6 +13,7 @@
     margin-bottom: 3rem;
   }
   @media @tablet-width {
+    margin-bottom: 3rem;
     h2 {
       font-size: 1.7rem !important;
       margin-bottom: 0rem;
@@ -52,6 +53,7 @@
 .feature-vasen {
   @media @tablet-width {
     order: 2;
+    margin-bottom: 3rem;
   }
   .feature-toggle {
     border-bottom: 2px solid @gold;
@@ -61,16 +63,17 @@
     margin-right: 1rem;
     &-title {
       position: absolute;
-      top: -4.5rem;
+      top: -4.6rem;
       right: 1rem;
       margin-right: 1rem;
-      padding-bottom: 5rem;
       text-align: right;
+      @media @tablet-width {
+        top: -3.5rem;
+      }
     }
     &-open-wrapper {
       padding-right: 1rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 1rem;
       text-align: right;
     }
     a {

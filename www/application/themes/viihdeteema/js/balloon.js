@@ -37,7 +37,7 @@ window.onload = function() {
   try {
   window.setTimeout(verhot, 3000); //8 seconds
   } finally {
-    createBalloons(7);
+    createBalloons(Math.random() * (3));
   }
 }
 
