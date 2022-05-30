@@ -24,7 +24,8 @@ function random(num) {
     for (var i = num; i > 0; i--) {
     var balloon = document.createElement("div");
     balloon.className = "balloon";
-    balloon.style.cssText = getRandomStyles();           balloonContainer.append(balloon);
+    balloon.style.cssText = getRandomStyles();           
+    balloonContainer.append(balloon);
     }
   }
 
@@ -33,6 +34,11 @@ function random(num) {
 //Verhot
 
 window.onload = function() {
+
+  var clicks = localStorage.getItem('myClicks') ? parseInt(localStorage.getItem('myClicks')) : 0;
+  localStorage.setItem('myClicks', clicks);
+  document.getElementById("clicks").innerHTML = clicks;
+
   window.setTimeout(fadeout, 2000); //8 seconds
   try {
   window.setTimeout(verhot, 3000); //8 seconds
