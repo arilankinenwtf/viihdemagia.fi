@@ -28,7 +28,7 @@ $this->inc('elements/header.php'); ?>
     <h1 class="entrytext" id="entrytext">
       Saammeko esittäytyä!
     </h1>
-    <img class="entryimg" id="entryimg" src="\viihdemagia\application\themes\viihdeteema\css\icons\logo\Transparent_logo.png">
+    <img class="entryimg" id="entryimg" src="/application/files/9816/3509/1080/Transparent_logo.png">
 
 
     <div class=content></div>

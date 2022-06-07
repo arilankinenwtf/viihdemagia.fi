@@ -27,6 +27,8 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
         array('title' => t('Ingressi'), 'menuClass' => '', 'spanClass' => 'ingress'),
         array('title' => t('Kuvateksti'), 'menuClass' => '', 'spanClass' => 'caption'),
         array('title' => t('Punainen teksti'), 'menuClass' => '', 'spanClass' => 'punainen-teksti'),
+        array('title' => t('Isompi teksti'), 'menuClass' => '', 'spanClass' => 'isompi-teksti'),
+        array('title' => t('Pienempi otsikko kaksi'), 'menuClass' => '', 'spanClass' => 'pienempi-otsikko-kaksi'),
         array(
             'title' => t('Painike'),
             'element' => array('a'),
