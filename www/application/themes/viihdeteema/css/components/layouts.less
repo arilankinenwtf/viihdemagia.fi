@@ -18,6 +18,21 @@ main {
   padding-top: @layout-padding;
   padding-bottom: @layout-padding;
 
+  &-me {
+    img {
+      overflow-x: hidden;
+      border-radius: 50%;
+      height: 300px;
+      width: auto;
+      object-fit: contain;
+      @media @small-desktop-width {
+        width: 90%;
+        height: auto;
+      }
+    }
+    padding: 10%;
+  }
+
   &-gutter {
     padding: @gutter-lg;
     padding-left: 10rem;
