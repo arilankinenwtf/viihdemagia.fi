@@ -116,6 +116,7 @@
 
 .splide__pagination {
   counter-reset: paginationbutton;
+  z-index: 1;
   position: relative;
   margin: 0;
   margin-top: -5rem;
@@ -123,6 +124,7 @@
 }
 
 .splide__pagination .splide__pagination__page {
+  z-index: 1;
   margin-bottom: 6rem;
   counter-increment: paginationbutton;
   font-size: 0;
@@ -137,6 +139,7 @@
 }
 
 .splide__pagination .splide__pagination__page.is-active {
+  z-index: 1;
   outline: none;
   background-color: @slider-bg-color;
   color: @slider-bg-color;
