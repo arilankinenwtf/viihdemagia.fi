@@ -22,19 +22,19 @@ defined('C5_EXECUTE') or die("Access Denied.");
     </div>
   </div>
   <div class="row">
-      <div class="col-md-12 footer-third">
+      <div class="col-md-12 footer-forth">
         <?php
         // new GlobalArea('nimi') luo yleisen alueen (jos sen nimistä ei vielä ole)
-        $a = new Area('Footer Third');
+        $a = new GlobalArea('Footer Forth');
         $a->display();
         ?>
       </div>
   </div>
   <div class="row">
-      <div class="col-md-12 footer-forth">
+      <div class="col-md-12 footer-third">
         <?php
         // new GlobalArea('nimi') luo yleisen alueen (jos sen nimistä ei vielä ole)
-        $a = new GlobalArea('Footer Forth');
+        $a = new Area('Footer Third');
         $a->display();
         ?>
       </div>
