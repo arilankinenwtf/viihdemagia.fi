@@ -105,3 +105,25 @@
     }
   }
 }
+
+.two-column-container {
+  .two-column-left {
+
+  }
+  .two-column-right {
+    padding: 2rem;
+    padding-top: 8rem;
+    @media @tablet-width {
+      padding: 1rem;
+    }
+  }
+}
+
+.col-sm-12 {
+  .row {
+    @media @tablet-width {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
