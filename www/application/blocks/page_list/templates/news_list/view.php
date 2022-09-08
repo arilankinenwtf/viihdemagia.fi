@@ -19,38 +19,40 @@ $c = Page::getCurrentPage();
       if ($useButtonForLink) {
         $hoverLinkText = $buttonLinkText;
       }
-      if($page->getCollectionDatePublic()) {
-        $date = $page->getCollectionDatePublicObject()->format('j.n.Y');
-      }
+
+      $date = '';
+      if($page->getCollectionDatePublic()) { $date = $page->getCollectionDatePublicObject()->format('j.n.Y');}
+
+      $src = '';
       if($page->getAttribute('main_image')) {
         $type = \Concrete\Core\File\Image\Thumbnail\Type\Type::getByHandle('news_image_thumbnail');
         $main_image = $page->getAttribute('main_image');
         $src = $main_image->getThumbnailURL($type->getBaseVersion());
-      } else {
-        $src = '';
       }
       ?>
     <div class="news-list-item-content">
-      <div class="news-list-item-text-wrapper">
-        <div class="news-list-item-date"><?php echo $date; ?></div>
-        <h2 class="news-list-item-title">
-        <a href="<?php echo $url ?>" target="<?php echo $target; ?>">
-          <?php echo $title ?>
-        </a>
-        </h2>
+      <a href="<?php echo $url ?>" target="<?php echo $target; ?>">
+        <img class="news-list-item-thumbnail" src="<?php echo $src; ?>" alt="<?php echo $title ?>">
 
-        <?php if ($includeDescription): ?>
-        <div class="news-list-item-description">
-          <?php echo $description ?>
-        </div>
-        <?php endif; ?>
+        <div class="news-list-item-text-wrapper">
+          <div class="news-list-item-date"><?php echo $date; ?></div>
+          <h2 class="news-list-item-title">
+            <?php echo $title ?>
+          </h2>
 
-        <?php if (isset($useButtonForLink) && $useButtonForLink): ?>
-        <div class="news-list-item-readmore top-border">
-            <a href="<?php echo $url?>" target="<?php echo $target?>" class="btn btn-secondary <?php echo $buttonClasses?>"><?php echo $buttonLinkText?></a>
+          <?php if ($includeDescription): ?>
+          <div class="news-list-item-description">
+            <?php echo $description ?>
+          </div>
+          <?php endif; ?>
+
+          <?php if (isset($useButtonForLink) && $useButtonForLink): ?>
+          <div class="news-list-item-readmore top-border">
+            <a href="<?php echo $url?>" target="<?php echo $target?>" class="btn btn-secondary"><?php echo $buttonLinkText?></a>
+          </div>
+          <?php endif; ?>
         </div>
-        <?php endif; ?>
-      </div>
+      </a>
     </div>
     
   </div>
