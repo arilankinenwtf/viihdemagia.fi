@@ -1,67 +1,82 @@
 .news-list {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: @white;
-    @media @desktop {
-      flex-direction: column;
-    }
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media @desktop-width {
+    flex-direction: column;
+  }
     &-item {
-      color: @white;
-      flex: 1, 0, 26%;
-      width: 26%;
       position: relative;
-      padding: 3rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      margin: 1rem;
-      @media @desktop {
-        width: auto;
+      border-top-right-radius: 50px;
+      list-style: none;
+      flex: 0 0 96%;
+      margin: 2%;
+      z-index: 300;
+      padding: 1rem;
+      @media @tablet {
+        flex: 0 0 45.9999%;
       }
-      &:hover,
-      &:focus,
-      &:active {
-        a {
-          color: @white;
-        }
+    
+      @media @small-desktop {
+        flex: 0 0 29.33%;
       }
 
       h2, h3, h4 {
-        color: @white;
         font-size: 1.5rem;
       }
       
       &-date {
-        color: @white;
-        padding-top: 1rem;
+        display: none;
       }
-
+      &-thumbnail {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        border-top-right-radius: 50px;
+      }
       &-title {
-        color: @white !important;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        height: 10rem;
         a {
-          font-size: 24px !important;
-          font-family: @font-family-headings !important;
-          color: @white !important;
-          font-weight: 700 !important;
-          letter-spacing: 0 !important;
+          text-decoration: none;
+          word-wrap: break-word;
+        }
+        padding: 2rem;
+        padding-bottom: 3.5rem;
+        &::before {
+          content: "Lue";
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: @black;
+          display: inline-block;
+          left: 2.5rem;
+          bottom: 2.5rem;
+          position: absolute;
+        }        
+        &::after {
+          content: "➔";
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: @white;
+          display: inline-block;
+          left: 5.5rem;
+          bottom: 2.5rem;
+          position: absolute;
         }
       }
 
       &-description {
-        color: @white;
-        padding-bottom: 1rem;
+        display: none;
       }
 
       &-image {
-        height: 100%;
+        height: 250px;
         object-fit: cover;
-        object-position: center;
         width: 100%;
-  
+        border-top-right-radius: 50px;
         @media @desktop {
           border-radius: 50%;
         }
@@ -79,19 +94,16 @@
         }
       }
   
-      &-frontpage {
-        min-height: unset;
-  
-        @media @desktop {
-  
-          &:nth-child(even) {
-            .service-list-item-content {
-            }
-          }
-    
-          &:nth-child(odd) {
-            .service-list-item-content {
-            }
+      &-content {
+        box-shadow: 0px 3px 8px @white;
+        transition: box-shadow ease-in-out 0.3s;
+        border-top-right-radius: 50px;
+      }
+      &-content:hover {
+        box-shadow: 0px 6px 12px @white;
+        .news-list-item {
+          &-title {
+            color: @white;
           }
         }
       }
