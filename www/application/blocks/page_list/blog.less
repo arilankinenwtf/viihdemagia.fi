@@ -1,18 +1,21 @@
 .news-list {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    color: @white;
     @media @desktop {
       flex-direction: column;
     }
     &-item {
-      width: 30vw;
+      color: @white;
+      flex: 1, 0, 26%;
+      width: 26%;
       position: relative;
-      border: 1px solid #09202b;
-      box-shadow: inset 0 0px 1px rgba(0,0,0,.075), 0 0 1px #09202b;
-      border-radius: 3px;
-      padding: 2rem;
+      padding: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       margin: 1rem;
       @media @desktop {
         width: auto;
@@ -21,24 +24,35 @@
       &:focus,
       &:active {
         a {
-          color: @oranssi;
+          color: @white;
         }
       }
 
       h2, h3, h4 {
+        color: @white;
         font-size: 1.5rem;
       }
       
       &-date {
+        color: @white;
         padding-top: 1rem;
       }
 
       &-title {
+        color: @white !important;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        a {
+          font-size: 24px !important;
+          font-family: @font-family-headings !important;
+          color: @white !important;
+          font-weight: 700 !important;
+          letter-spacing: 0 !important;
+        }
       }
 
       &-description {
+        color: @white;
         padding-bottom: 1rem;
       }
 

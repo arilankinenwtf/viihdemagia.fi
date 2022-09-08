@@ -2,38 +2,22 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<!-- Sivupohja uutisille/blogeille -->
-
 <main class="news-page" id="main-content">
   <?php
-  // Pääkuva
-  // tarvitsee uuden attributti määrittelyn concretessa
+  $main_image = '';
   if($c->getAttribute('main_image')) {
     $main_image = $c->getAttribute('main_image');
     $main_image = $main_image->getURL(); 
-  } else {
-    $main_image = '';
   }
 
-  // Pääkuvan alt/kuvausteksti
-  // tarvitsee uuden attributti määrittelyn concretessa
-  if($c->getAttribute('main_image_desc')) {
-    $main_image_desc = $c->getAttribute('main_image_desc');
-  } else {
-    $main_image_desc = '';
-  }
+  $title = '';
+  if($c->getCollectionName()) { $title = $c->getCollectionName(); }
 
-  if($c->getCollectionName()) {
-    $title = $c->getCollectionName();
-  }
+  $description = '';
+  if($c->getCollectionDescription()) { $description = $c->getCollectionDescription(); }
 
-  if($c->getCollectionDescription()) {
-    $description = $c->getCollectionDescription();
-  }
-
-  if($c->getCollectionDatePublic()) {
-    $date = $c->getCollectionDatePublicObject()->format('j.n.Y');
-  }
+  $date = '';
+  if($c->getCollectionDatePublic()) { $date = $c->getCollectionDatePublicObject()->format('j.n.Y'); }
   ?>
   <div class="news-wrapper">
     <div class="news-content container">
@@ -51,7 +35,7 @@ $this->inc('elements/header.php'); ?>
           <div class="news-title">
             <h1><?php echo $title; ?></h1>
           </div>
-          <span class="ingressi"><?php echo $description; ?></span>
+          <span class="ingress"><?php echo $description; ?></span>
           <?php
           $a = new Area('Main');
           $a->enableGridContainer();
@@ -60,12 +44,8 @@ $this->inc('elements/header.php'); ?>
         </div>
       </div>
     </div>
-    <img class="news-image" alt="<?php echo $main_image_desc; ?>" src="<?php echo $main_image; ?>">
   </div>
-  <div class="news-read-more-list">
-    <div class="news-read-more-list-title layout--image-bg">
-      <h2>Lue lisää</h2>
-    </div>
+  <div class="news-read-more-list mt-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -81,7 +61,10 @@ $this->inc('elements/header.php'); ?>
 
 <?php
 $site = Site::getSite();
-$siteLogo = $site->getAttribute('site_logo')->getURL();
+$siteLogo = '';
+if($site->getAttribute('site_logo')) {
+  $siteLogo = $site->getAttribute('site_logo')->getURL();
+}
 $schemaDate = $c->getCollectionDatePublicObject()->format('Y-m-d');
 $pageUrl = $c->getCollectionLink();
 
