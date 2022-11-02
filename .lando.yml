@@ -2,7 +2,7 @@ name: viihdemagia
 recipe: lamp
 config:
   webroot: www
-  php: "7.4" # Zoner
+  php: "8.0" # Zoner
   database: mariadb:10.3.29 # Zoner
 
 env_file:

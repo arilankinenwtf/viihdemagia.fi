@@ -83,7 +83,7 @@ class Controller extends BlockController implements FileTrackableInterface
         // in view mode, linkURL takes us to where we need to go whether it's on our site or elsewhere
         $rows = [];
         foreach ($r as $q) {
-            if (!$q['linkURL'] && $q['internalLinkCID']) {
+            if (isset($q['linkURL']) && $q['linkURL'] && isset($q['internalLinkCID']) && $q['internalLinkCID']) {
                 $c = Page::getByID($q['internalLinkCID'], 'ACTIVE');
                 $q['linkURL'] = $c->getCollectionLink();
                 $q['linkPage'] = $c;

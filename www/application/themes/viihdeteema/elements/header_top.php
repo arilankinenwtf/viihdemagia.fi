@@ -40,7 +40,7 @@
     <!-- Open Graph -->
     <meta property="fb:app_id" content="966242223397117" />
     <meta property="og:site_name" content="<?php echo $siteName  ?>"/>
-    <meta property="og:title" content="<?php if($metaTitle) { echo $metaTitle; } else { echo $title; } ?>"/>
+    <meta property="og:title" content="<?php if($metaTitle ?? "") { echo $metaTitle; } else { echo $title; } ?>"/>
     <meta property="og:description" content="<?php echo $description ?>"/>
     <meta property="og:url" content="<?php echo  $url ?>"/>
     <meta property="og:type" content="website" />
