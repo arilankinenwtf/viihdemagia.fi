@@ -4,14 +4,12 @@
   margin-left: -1rem;
   margin-right: -1rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   @media @desktop {
     flex-direction: column;
   }
     &-item {
-      background-color: @white;
       position: relative;
       border-top-right-radius: 50px;
       list-style: none;
@@ -52,9 +50,9 @@
           content: "Lue";
           font-size: 1.3rem;
           font-weight: 800;
-          color: @black;
+          color: @white;
           display: inline-block;
-          left: 2.5rem;
+          right: 5.5rem;
           bottom: 2.5rem;
           position: absolute;
         }        
@@ -64,14 +62,15 @@
           font-weight: 800;
           color: @white;
           display: inline-block;
-          left: 5.5rem;
+          right: 2.5rem;
           bottom: 2.5rem;
           position: absolute;
         }
       }
 
       &-description {
-        display: none;
+        padding-bottom: 3rem;
+        color: white;
       }
 
       &-image {
@@ -97,12 +96,12 @@
       }
   
       &-content {
-        box-shadow: 0px 3px 8px @white;
+        box-shadow: 0px 3px 8px #fdfdfd29;
         transition: box-shadow ease-in-out 0.3s;
         border-top-right-radius: 50px;
       }
       &-content:hover {
-        box-shadow: 0px 6px 12px @white;
+        box-shadow: 0px 6px 12px #f2f2f248;
         .news-list-item {
           &-title {
             color: @white;
