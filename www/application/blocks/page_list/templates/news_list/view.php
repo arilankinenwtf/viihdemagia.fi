@@ -25,7 +25,6 @@ $c = Page::getCurrentPage();
 
       $src = '';
       if($page->getAttribute('main_image')) {
-        $type = \Concrete\Core\File\Image\Thumbnail\Type\Type::getByHandle('news_image_thumbnail');
         $main_image = $page->getAttribute('main_image');
         $src = $main_image->getThumbnailURL($type->getBaseVersion());
       }
