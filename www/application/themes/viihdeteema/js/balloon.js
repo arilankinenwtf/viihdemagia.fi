@@ -35,7 +35,7 @@ function createBalloons(num) {
 window.onload = function() {
 window.setTimeout(fadeout, 2000); //8 seconds
 try {
-window.setTimeout(verhot, 3000); //8 seconds
+window.setTimeout(verhot, 1000); //8 seconds
 } finally {
   createBalloons(Math.random() * (3));
 }
