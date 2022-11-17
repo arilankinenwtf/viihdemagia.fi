@@ -26,7 +26,6 @@ $c = Page::getCurrentPage();
       $src = '';
       if($page->getAttribute('main_image')) {
         $main_image = $page->getAttribute('main_image');
-        $src = $main_image->getThumbnailURL($type->getBaseVersion());
       }
       ?>
     <div class="news-list-item-content">
