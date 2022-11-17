@@ -40,11 +40,11 @@ $c = Page::getCurrentPage();
             <?php echo $title ?>
           </h2>
 
-        <?php if ($includeDescription): ?>
-        <div class="news-list-item-description">
-          <?php echo $description ?>
-        </div>
-        <?php endif; ?>
+          <?php if ($includeDescription): ?>
+          <div class="news-list-item-description">
+            <?php echo $description ?>
+          </div>
+          <?php endif; ?>
 
           <?php if (isset($useButtonForLink) && $useButtonForLink): ?>
           <div class="news-list-item-readmore top-border">
