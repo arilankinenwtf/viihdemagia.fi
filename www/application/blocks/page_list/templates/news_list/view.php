@@ -23,10 +23,10 @@ $c = Page::getCurrentPage();
       $date = '';
       if($page->getCollectionDatePublic()) { $date = $page->getCollectionDatePublicObject()->format('j.n.Y');}
 
-      $src = '';
-      if($page->getAttribute('main_image')) {
-        $main_image = $page->getAttribute('main_image');
-        $src = $main_image->getThumbnailURL();
+      $main_image = '';
+      if($c->getAttribute('main_image')) {
+        $main_image = $c->getAttribute('main_image');
+        $main_image = $main_image->getURL(); 
       }
       ?>
     <div class="news-list-item-content">
