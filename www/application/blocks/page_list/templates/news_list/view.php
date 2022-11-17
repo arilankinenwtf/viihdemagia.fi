@@ -31,7 +31,7 @@ $c = Page::getCurrentPage();
       ?>
     <div class="news-list-item-content">
       <a href="<?php echo $url ?>" target="<?php echo $target; ?>">
-        <img class="news-list-item-thumbnail" src="<?php echo $src; ?>" alt="<?php echo $title ?>">
+        <img class="news-list-item-thumbnail" src="<?php echo $main_image; ?>" alt="<?php echo $title ?>">
 
         <div class="news-list-item-text-wrapper">
           <div class="news-list-item-date"><?php echo $date; ?></div>
