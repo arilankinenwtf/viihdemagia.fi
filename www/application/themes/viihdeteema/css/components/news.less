@@ -17,13 +17,21 @@
             text-align: center;
             color: @white;
         }
+        @media @small-desktop-max {
+            width: 100vw;
+            margin-left: 0vw;
+            margin-right: 0vw;
+        }
     }
 }
 
 .news-date {
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 4rem;
     color: white;
+    @media @small-desktop-max {
+        margin-top: 2rem;
+    }
 }
 
 .news-title {
@@ -52,6 +60,7 @@
     text-align: center;
     font-weight: 700;
     color: @white;
+    display: none;
 }
 
 .news-wrapper {
