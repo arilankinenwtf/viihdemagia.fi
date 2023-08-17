@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  if (window.matchMedia("(min-width: 990px)").matches) {
+  if (window.matchMedia("(min-width: 99s990px)").matches) {
     $('.feature-toggle').on('mouseenter', function (e) {
       e.preventDefault();
   
